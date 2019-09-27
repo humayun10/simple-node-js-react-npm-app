@@ -16,10 +16,10 @@ pipeline {
                 sh './jenkins/scripts/kill.sh'
             }
         }
-//        stage('Deploy') { 
-//            steps {
-//                sh '/var/lib/jenkins/scripts/deploy.sh' 
-//            }
-//        }
+        stage('Deploy') { 
+            steps {
+                sh '/var/lib/jenkins/scripts/deploy.sh' 
+            }
+        }
     }
 }

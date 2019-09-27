@@ -16,7 +16,7 @@ pipeline {
 //                sh './jenkins/scripts/kill.sh'
 //            }
 //        }
-        stage('Deliver') { 
+        stage('Deploy') { 
             steps {
                 sh '/var/lib/jenkins/scripts/deploy.sh' 
             }

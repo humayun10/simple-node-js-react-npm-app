@@ -17,6 +17,9 @@ class App extends Component {
       </div>
     );
   }
-}
+  
+  server.listen(port () => {
+    console.log(`Server running at${port}`);
+});
 
 export default App;

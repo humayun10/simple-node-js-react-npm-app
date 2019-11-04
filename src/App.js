@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
+const hostname = '127.0.0.1';
 const port = 5000;
 class App extends Component {
   render() {
@@ -18,8 +19,8 @@ class App extends Component {
     );
   }
   
-  server.listen(port () => {
-    console.log(`Server running at${port}`);
+  server.listen(port, hostname, () => {
+  console.log(`Server running at http://${hostname}:${port}/`);
 });
 
 export default App;
